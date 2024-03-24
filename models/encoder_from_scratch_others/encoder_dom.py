@@ -180,7 +180,7 @@ def encode_texts(tokenizer, texts, max_length):
 
 def main():
     # Load the dataset
-    df = pd.read_csv('cleaned_data_nosw.csv')
+    df = pd.read_csv('../../data/cleaned_data_nosw.csv')
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
     max_length = 128
     input_ids, attention_masks = encode_texts(tokenizer, df['tweet'].astype(str).tolist(), max_length)

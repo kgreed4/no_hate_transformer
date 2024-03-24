@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 def main():
     # Load your dataset
-    data = pd.read_csv('cleaned_data_sw.csv')  # Replace with actual data loading method
+    data = pd.read_csv('../../data/cleaned_data_sw.csv')  # Replace with actual data loading method
 
     # Initialize the ML pipeline
     ml_pipeline = MLModelPipeline(data)

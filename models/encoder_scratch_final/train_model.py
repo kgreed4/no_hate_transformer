@@ -55,9 +55,8 @@ def prepare_datasets(df, tokenizer):
     test_dataset = test_dataset.batch(BATCH_SIZE)
     
     return train_dataset, validation_dataset, test_dataset
-
-if __name__ == "__main__":
-    file_path = 'cleaned_labeled_data.csv'
+def main():
+    file_path = '../../data/cleaned_labeled_data.csv'
     df = load_data(file_path)
 
     # Here we load in the BERT tokenizer
@@ -93,3 +92,7 @@ if __name__ == "__main__":
 
     # Print the test loss and accuracy
     print(f"Test Loss: {test_loss}, Test Accuracy: {test_accuracy}")
+
+
+if __name__ == "__main__":
+    main()

@@ -31,4 +31,4 @@ def prepare_data(file_path, clean_tweets=False):
     return df
 
 if __name__ == "__main__":
-    prepare_data('/Users/sveerisetti/Desktop/Duke_Spring/Deep_Learning/Projects/Project_2/Data/raw_data.csv', clean_tweets=False)
+    prepare_data('../../data/raw_data.csv', clean_tweets=False)
