@@ -33,7 +33,7 @@ if __name__ == "__main__":
     # Load the dataset
 df = pd.read_csv(DATA_PATH)
 
-# Convert to string
+# Convert to string 
 df['tweet'] = str(df['tweet'])
 
 # Drop every column that isn't tweet or class
